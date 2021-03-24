@@ -1,12 +1,16 @@
-# Index3
+# Index3 : Développement d'un indicateur pour la qualité de vie urbaine (télédétection)
 
-Ce répertoire contient le code et les procédures pour le développement d'un index pour la qualité de vie dans les villes françaises sur des critères environnementaux en utilisant des techniques de télédétection (remote sensing). Alors que les villes françaises sont de plus en plus souvent soumises à des épisodes caniculaires en été ou à des inondations/glissements de terrain, planter des arbres et revégétaliser rapidement les agglomérations françaises apparaît aujourd'hui comme une solution de bon sens et abordable financièrement, socialement et écologiquement. Hors les chiffres manquent concernant de telles initiatives hormis des coups de communication des différents élus. 
+Ce répertoire contient le code et les procédures pour le développement d'un index pour la qualité de vie dans les villes françaises sur des critères environnementaux en utilisant des techniques de télédétection (remote sensing). Alors que les villes françaises sont de plus en plus souvent soumises à des épisodes caniculaires en été, des épisodes de pollution intenses ou bien encore à des inondations/glissements de terrain, planter des arbres et revégétaliser rapidement les agglomérations françaises apparaît aujourd'hui comme une solution de bon sens et abordable financièrement, socialement et écologiquement. Hors les chiffres manquent concernant de telles initiatives hormis des coups de communication des différents élus. 
 
 ![maps_gre](https://user-images.githubusercontent.com/48808006/110324653-8f7e7f80-8016-11eb-9f4d-85936d7c6a87.png) 
 
 Vue satellite de Grenoble, image de CNES, Airbus, Maxar Technologies par l'intermédiaire de Google Maps 
 
-Aussi, ce répertoire entend répondre à ce besoin de comptabilité des espaces végétalisés en zone urbaine. L'observation des sols par vues aériennes ou satellite est utilisé depuis des decennies pour évaluer l'évolution des sols. Associé à la puissance du Machine Learning qui peut maintenant traiter des volumes d'informations importants, il devient possible d'évaluer les caractéristiques de ces territoires sur de grandes surfaces. La procédure de ce répertoire est simple :
+Aussi, ce répertoire entend répondre à ce besoin de comptabilité des espaces végétalisés en zone urbaine. L'observation des sols par vues aériennes ou satellite est utilisé depuis des decennies pour évaluer l'évolution des sols à grandes échelles. Les progrès techniques effectués sur les capteurs embarqués et la mise à disposition grand public des données permet aujourd'hui de nouvelles approches. Associé à la puissance du Machine Learning qui peut maintenant traiter des volumes d'informations conséquents, il devient possible d'évaluer les caractéristiques de ces territoires sur de grandes surfaces. La procédure de ce répertoire est simple :
+
+## Table of Contents
+1. [University of Colorado Boulder EarthLab](## 1. University of Colorado Boulder EarthLab)
+2. [2. Recherche Bibliographique](2. Recherche Bibliographique)
 
 - se familairiser avec la manipulation d'image satellite 
 - entraîner une IA pour évaluer la couverture d'un territoire par des arbres suffisamment développés
@@ -24,7 +28,7 @@ Symbole | Signification
 ψ | représente le pourcentage de surface au sol visible recouvert par des arbres adultes, 
 ε | la quantité en équivalent carbone d'énergie consommée à l'intérieur de l'agglomération par habitant. 
 
-## I) University of Colorado Boulder EarthLab
+## 1. University of Colorado Boulder EarthLab
 
 Après quelques recherches sur le net, le laboratoire [Earth Lab](https://www.earthdatascience.org/) de l'Université du Colorado Boulder a développé un package dans le langage de programmation Python nommé [Earthpy](https://earthpy.readthedocs.io/) pour faciliter le traitement de données de télédétection. Ainsi nous utiliserons ce package pour la manipulation des images de télédétection. Parmi ces notebooks, on retrouve de façon intéressante l'indicateur NDVI qui calcule à partir des images spectrales dans le rouge pour RGB et dans le proche infrarouge NIR un ratio qui caractérise la présence et la santé de la végétation au sol. Ce ratio sera employé dans le futur pour générer des masques afin de s'intéresser uniquement aux zones végétalisées sur une image hyperspectrale d'origine.  
 
@@ -37,7 +41,7 @@ Pour commencer, des notebooks sont disponibles pour démarrer dans ce langage av
 - [Landsat Exercices](https://github.com/vintel38/Index3/blob/main/UCB_notebooks/Landsat_Exo.ipynb)
 - [Indices Végétaux](https://github.com/vintel38/Index3/blob/main/UCB_notebooks/VegIndex.ipynb)
 
-## II) Recherche Bibliographique 
+## 2. Recherche Bibliographique 
 
 La recherche bibliographique s'avère utile pour mettre à jour les techniques de post-traitement des données de télédétection collectées. Les articles cités dans cette partie proviennent majoritairement de recherches Google avec les mots-clés : `detect tree in remote imaging` ou encore `tree segmentation in remote imaging`. En effet, avec un peu de connaissances en traitement de l'image par des systèmes intelligents, on s'aperçoit rapidement que la tâche demandée dans le contexte de cette étude est la segmentation qui va permettre d'associer le statut d'arbre à tous les pixels sur une carte qui auront l'aspect d'arbre. Cette technique est répandue dans le secteur de la télédétection et beaucoup de publication en témoignent. 
 
