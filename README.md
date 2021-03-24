@@ -2,7 +2,7 @@
 
 Ce répertoire contient le code et les procédures pour le développement d'un index pour la qualité de vie dans les villes françaises sur des critères environnementaux en utilisant des techniques de télédétection (remote sensing). Alors que les villes françaises sont de plus en plus souvent soumises à des épisodes caniculaires en été, des épisodes de pollution intenses ou bien encore à des inondations/glissements de terrain, planter des arbres et revégétaliser rapidement les agglomérations françaises apparaît aujourd'hui comme une solution de bon sens et abordable financièrement, socialement et écologiquement. Hors les chiffres manquent concernant de telles initiatives hormis des coups de communication des différents élus. 
 
-![maps_gre](./images/maps_grenoble.png) 
+![maps_gre](https://github.com/vintel38/Index3/blob/main/images/maps_grenoble.PNG) 
 
 Vue satellite de Grenoble, image de CNES, Airbus, Maxar Technologies par l'intermédiaire de Google Maps 
 
@@ -45,7 +45,7 @@ Pour commencer, des notebooks sont disponibles pour démarrer dans ce langage av
 
 Le problème général du Machine Learning s'applique également à ce projet. Comment rassembler assez de données pour entraîner et mettre au point une application telle qu'Index3 dans un domaine aussi discret que la télédétection ? Heureusement, un des géants d'Internet s'est attelé à la tâche : Google. Il propose avec son moteur de recherche dans le cloud [Google Earth Engine](https:,,earthengine.google.com,) de développer des applications à distance en utilisant à la fois les pétaflops de données qu'il détient, mais également la puissance de calcul de ses datacenters. La capture d'écran suivante présente une utilisation possible du [Code Editor](https:,,code.earthengine.google.com,) de la plateforme proposée dans les docs. Le script de la fenêtre centrale haute est compilé en ligne pour tracer l'indicateur NDVI sur la côte californienne en appliquant en masque au champ de valeurs pour deux images accolées.
 
-![EEcode_editor](./images/EEcode_editor)
+![EEcode_editor](https://github.com/vintel38/Index3/blob/main/images/EEcode_editor.PNG)
 
 Cependant, comme vous pouvez le voir dans la fenêtre script du Code Editor, Google Earth Engine utilise le langage JavaScript pour éditer le code à compiler. Pour garder une cohérence avec les autres projets, seul le langage Python sera utilisé dans ce projet. On utilisera donc une autre interface que le Code Editor pour bénéficier de la puissance logicielle de Google Earth Engine.
 
