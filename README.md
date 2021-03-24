@@ -2,7 +2,7 @@
 
 Ce répertoire contient le code et les procédures pour le développement d'un index pour la qualité de vie dans les villes françaises sur des critères environnementaux en utilisant des techniques de télédétection (remote sensing). Alors que les villes françaises sont de plus en plus souvent soumises à des épisodes caniculaires en été, des épisodes de pollution intenses ou bien encore à des inondations/glissements de terrain, planter des arbres et revégétaliser rapidement les agglomérations françaises apparaît aujourd'hui comme une solution de bon sens et abordable financièrement, socialement et écologiquement. Hors les chiffres manquent concernant de telles initiatives hormis des coups de communication des différents élus. 
 
-![maps_gre](./images/maps_grenoble) 
+![maps_gre](./images/maps_grenoble.png) 
 
 Vue satellite de Grenoble, image de CNES, Airbus, Maxar Technologies par l'intermédiaire de Google Maps 
 
