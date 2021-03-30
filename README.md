@@ -20,7 +20,7 @@ Symbole | Signification
 
 La procédure de ce répertoire est linéaire : on commencera par se familiariser avec la manipulation d'image satellite en Python (1.), puis on importera des données réelles et d'actualité sur les zones qui seraient intéressantes (2.). Une recherche bibliographique (3.) sur l'état de l'art permettra de lister avant de choisir les techniques les plus adaptées pour les besoins spécifiés. Enfin, un code développé spécialement (4.) permettra d'établir un classement des villes en fonction de leur degré de végétation.
 
-## Table of Contents
+## Table des matières
 1. University of Colorado Boulder EarthLab
 2. QGIS with Earth Engine Plugin
 3. Recherche Bibliographique
